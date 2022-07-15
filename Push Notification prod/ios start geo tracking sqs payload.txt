@@ -1,0 +1,20 @@
+{
+  "token" : "4f37186b6b69509852d49066d72d5c0718e7660593ceffece0a10e7582a29b57",
+  "appType" : 2,
+  "record_id" : 0,
+  "payload" : {
+    "aps": {
+      "mutable-content": "1",
+      "countryName": null,
+      "badge": 1,
+      "alert": {
+        "title": "Please launch WTP App",
+        "body": "Please Start WTP App or keep it live in background",
+        "categoryName": "AppEvent",
+        "tripId": ["1234","2234"],
+        "Action": "startLocationUpdating"
+      }
+    }
+  },
+  "isBackground": 0
+}

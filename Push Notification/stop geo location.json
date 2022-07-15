@@ -1,0 +1,13 @@
+{
+  "aps": {
+   "content-available": 1
+},
+    "alert": {
+      "title": "Stop Geo Location Updating",
+      "body": "the location updating of WTP leisure has stopped",
+      "categoryName": "AppEvent",
+      "tripId": "12595",
+      "action": "stopUpdatingLocation"
+    }
+
+}

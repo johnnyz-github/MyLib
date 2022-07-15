@@ -1,0 +1,17 @@
+{
+  "aps": {
+    "mutable-content": "1",
+    "riskName": "Moderate",
+    "countryName": null,
+    "badge": 1,
+    "alert": {
+      "title": "Fire",
+      "body": "Please avoid the affected area",
+      "categoryName": "Event",
+      "intelId": "918876",
+      "countryCodes": [
+        "MYS"
+      ]
+    }
+  }
+}

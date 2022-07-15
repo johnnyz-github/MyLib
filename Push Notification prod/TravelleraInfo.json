@@ -1,0 +1,19 @@
+{
+  "aps": {
+    "content-available": 1
+  },
+  "alert": {
+    "uid": "12782",
+    "categoryName": "Traveller Information",
+    "groupStatus": 0,
+    "orgStatus": 1,
+    "active": 1,
+    "isFullApp": 1,
+    "isShowEmergency": 1,
+    "group_name": "jz3",
+    "emergency": "22",
+    "assistance": "33",
+    "start": "2020-08-04",
+    "expiry_date": null
+  }
+}

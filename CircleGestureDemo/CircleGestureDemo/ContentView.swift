@@ -10,16 +10,17 @@ import SSSwiftUIGIFView
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Rectangle()
-                .fill(Color.init(red: 34/255, green: 30/255, blue: 47/255))
+           Image("background")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
             
-            TemperatureControlView()
+            HomeView()
         }
     }
 }
 
-struct TemperatureControlView: View {
+struct HomeView: View {
     @ObservedObject var picIsland = PicIslandViewModel()
     @State var indexOfTopIcon: Int = 0
     @State var angleValue: CGFloat = 0.0
@@ -29,32 +30,34 @@ struct TemperatureControlView: View {
                         knobRadius: 5.0,
                         radius: 150.0)
     var body: some View {
-        
-            
-        ZStack {
-            SwiftUIGIFPlayerView(gifName: "globe-2")
-                .frame(width: 280, height: 280, alignment: .center)
-//            globeAnimation
-            circleIcons
+        VStack{
+            SummaryView(model : picIsland.selectedIcon)
+            Spacer()
+            ZStack {
+                SwiftUIGIFPlayerView(gifName: "globe")
+//                    .frame(width: 400, height: 400, alignment: .center)
+    //            globeAnimation
+                circleIcons
 
-            Circle()
-                .fill( Color.red)
-                .frame(width: config.knobRadius * 2, height: config.knobRadius * 2)
-                .padding(10)
-                .offset(y: -config.radius)
-                .rotationEffect(Angle.degrees(Double(angleValue)))
-                .gesture(DragGesture(minimumDistance: 0.0)
-                            .onChanged({ value in
-                                change(location: value.location)
-                            }))
+                Circle()
+                    .fill( Color.red)
+                    .frame(width: config.knobRadius * 2, height: config.knobRadius * 2)
+                    .padding(10)
+                    .offset(y: -config.radius)
+                    .rotationEffect(Angle.degrees(Double(angleValue)))
+                    .gesture(DragGesture(minimumDistance: 0.0)
+                                .onChanged({ value in
+                                    change(location: value.location)
+                                }))
 
-            Text("\( picIsland.icons[ indexOfTopIcon].title) ")
-                            .font(.system(size: 20))
-                            .foregroundColor(.white)
-                            .frame(width: 100, height: 50, alignment: .center)
+                Text("\( picIsland.icons[ indexOfTopIcon].title) ")
+                                .font(.system(size: 20))
+                                .foregroundColor(.white)
+                                .frame(width: 100, height: 50, alignment: .center)
+            }
+//            .background(Color.white.opacity(0.5))
         }
-       
-        .background(Color.white)
+        
     }
     
     private func change(location: CGPoint) {
@@ -97,8 +100,10 @@ struct TemperatureControlView: View {
                 var centerY : CGFloat = geo.size.height / 2
                 Image( picIsland.icons[i].picName)
                     .resizable()
-                    .frame(width: 50, height: 70, alignment: .center)
+                    .frame(width: 30, height: 50, alignment: .center)
+                    .rotationEffect(.degrees( Double(iAfterRotate * 30)))
                     .position(x: positions[iAfterRotate].x * config.radius + centerX, y: -positions[iAfterRotate].y * config.radius + centerY)
+                    
                     .foregroundColor(.orange)
             }
         }

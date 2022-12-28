@@ -19,5 +19,8 @@ class PicIslandViewModel : ObservableObject {
                             , IconModel(id : 10 , systemName: "moon", picName:"scooba", title: "Crime" , selected: false)
                             , IconModel(id : 11, systemName: "sun.max",picName:"beach",  title: "Risk" , selected: false)
                             , IconModel(id : 12 , systemName: "globe", picName:"tilttower", title: "Setting" , selected: false)]
-    
+    var selectedIcon : IconModel{
+        icons.first{ $0.selected} ?? defaultIcon
+    }
+    let defaultIcon = IconModel(id: 1, systemName: "ferry", picName:"liberty",  title: "Policy", selected: true)
 }

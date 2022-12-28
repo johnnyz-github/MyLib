@@ -5,6 +5,7 @@
 //  Created by Anik on 10/9/20.
 //
 import SwiftUI
+import SSSwiftUIGIFView
 
 struct ContentView: View {
     var body: some View {
@@ -26,29 +27,16 @@ struct TemperatureControlView: View {
                         maximumValue: 12.0,
                         totalValue: 12.0,
                         knobRadius: 5.0,
-                        radius: 125.0)
+                        radius: 150.0)
     var body: some View {
         
             
         ZStack {
-//            Circle()
-//                .background()
-//                .frame(width: config.radius * 2, height: config.radius * 2)
-//                .scaleEffect(1.2)
-            Image("GlobeEarth1").resizable().scaledToFit()
-//            Circle()
-//                .stroke(Color.gray,
-//                        style: StrokeStyle(lineWidth: 3, lineCap: .butt, dash: [3, 23.18]))
-//                .frame(width: config.radius * 2, height: config.radius * 2)
-            
-//            Circle()
-//                .trim(from: 0.0, to: CGFloat(indexOfTopIcon)/config.totalValue)
-//                .stroke(CGFloat(indexOfTopIcon) < config.maximumValue/2 ? Color.blue : Color.red, lineWidth: 4)
-//                .frame(width: config.radius * 2, height: config.radius * 2)
-//                .rotationEffect(.degrees(-90))
-                
+            SwiftUIGIFPlayerView(gifName: "globe-2")
+                .frame(width: 280, height: 280, alignment: .center)
+//            globeAnimation
             circleIcons
-            
+
             Circle()
                 .fill( Color.red)
                 .frame(width: config.knobRadius * 2, height: config.knobRadius * 2)
@@ -59,13 +47,14 @@ struct TemperatureControlView: View {
                             .onChanged({ value in
                                 change(location: value.location)
                             }))
-            
-            Text("\( indexOfTopIcon) ")
-                            .font(.system(size: 60))
+
+            Text("\( picIsland.icons[ indexOfTopIcon].title) ")
+                            .font(.system(size: 20))
                             .foregroundColor(.white)
+                            .frame(width: 100, height: 50, alignment: .center)
         }
        
-        
+        .background(Color.white)
     }
     
     private func change(location: CGPoint) {
@@ -99,15 +88,16 @@ struct TemperatureControlView: View {
                      , CGPoint(x: -0.886,y: 0.5)
                      , CGPoint(x: -0.5,y: 0.886)
     ]
-   
+    
     var circleIcons : some View {
         GeometryReader{ geo in
             ForEach(0..<picIsland.icons.count){ i in
                 let iAfterRotate : Int = rotateN(i)
                 var centerX : CGFloat = geo.size.width / 2
                 var centerY : CGFloat = geo.size.height / 2
-                Image(systemName: picIsland.icons[i].systemName)
-                    
+                Image( picIsland.icons[i].picName)
+                    .resizable()
+                    .frame(width: 50, height: 70, alignment: .center)
                     .position(x: positions[iAfterRotate].x * config.radius + centerX, y: -positions[iAfterRotate].y * config.radius + centerY)
                     .foregroundColor(.orange)
             }

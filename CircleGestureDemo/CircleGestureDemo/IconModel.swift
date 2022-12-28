@@ -7,8 +7,9 @@
 
 import Foundation
 struct IconModel : Identifiable{
-    var id: Int
-    var systemName : String
-    var title : String
-    var selected : Bool
+    let id: Int
+    let systemName : String
+    let picName : String
+    let title : String
+    let selected : Bool
 }

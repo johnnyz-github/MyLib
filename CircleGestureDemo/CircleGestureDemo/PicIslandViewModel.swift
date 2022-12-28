@@ -7,17 +7,17 @@
 
 import Foundation
 class PicIslandViewModel : ObservableObject {
-    @Published var icons = [IconModel(id: 1, systemName: "ferry",  title: "Policy", selected: true)
-                            , IconModel(id : 2 , systemName: "airplane", title: "Trip" , selected: false)
-                            , IconModel(id : 3 , systemName: "bus", title: "Trip" , selected: false)
-                            , IconModel(id : 4 , systemName: "car", title: "Trip" , selected: false)
-                            , IconModel(id : 5 , systemName: "bicycle", title: "Trip" , selected: false)
-                            , IconModel(id : 6 , systemName: "scooter", title: "Trip" , selected: false)
-                            , IconModel(id : 7 , systemName: "hand.thumbsup", title: "Trip" , selected: false)
-                            , IconModel(id : 8 , systemName: "line.3.horizontal", title: "Trip" , selected: false)
-                            , IconModel(id : 9 , systemName: "cloud", title: "Trip" , selected: false)
-                            , IconModel(id : 10 , systemName: "moon", title: "Trip" , selected: false)
-                            , IconModel(id : 11, systemName: "sun.max", title: "Trip" , selected: false)
-                            , IconModel(id : 12 , systemName: "globe", title: "Trip" , selected: false)]
+    @Published var icons = [IconModel(id: 1, systemName: "ferry", picName:"liberty",  title: "Policy", selected: true)
+                            , IconModel(id : 2 , systemName: "airplane", picName:"goldengate",  title: "Trip" , selected: false)
+                            , IconModel(id : 3 , systemName: "bus", picName:"pyramid", title: "Login/Register" , selected: false)
+                            , IconModel(id : 4 , systemName: "car", picName:"chinese", title: "Covid" , selected: false)
+                            , IconModel(id : 5 , systemName: "bicycle",picName:"egypt",  title: "T & C" , selected: false)
+                            , IconModel(id : 6 , systemName: "scooter",picName:"effle",  title: "Message" , selected: false)
+                            , IconModel(id : 7 , systemName: "hand.thumbsup",picName:"tilttower",  title: "alerts" , selected: false)
+                            , IconModel(id : 8 , systemName: "line.3.horizontal",picName:"india",  title: "Near Me" , selected: false)
+                            , IconModel(id : 9 , systemName: "cloud",picName:"sun",  title: "Emergency" , selected: false)
+                            , IconModel(id : 10 , systemName: "moon", picName:"scooba", title: "Crime" , selected: false)
+                            , IconModel(id : 11, systemName: "sun.max",picName:"beach",  title: "Risk" , selected: false)
+                            , IconModel(id : 12 , systemName: "globe", picName:"tilttower", title: "Setting" , selected: false)]
     
 }

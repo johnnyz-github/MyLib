@@ -18,8 +18,11 @@ struct SummaryView: View {
                 Image(model.title)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                
-                TaskView(model : model)
+               Image("demo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 100, height: 50, alignment: .center)
+                RequirementView(model : model)
                 }
         }
 

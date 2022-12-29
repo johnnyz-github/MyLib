@@ -13,14 +13,16 @@ enum RequirementType{
     case location
     case trip
     case mobile
+    case notification
     var description : String {
         switch self {
         // Use Internationalization, as appropriate.
-        case .login: return "login"
-        case .policy: return "policy"
-        case .location: return "location"
-        case .trip: return "trip"
-        case .mobile: return "mobile"
+        case .login: return "need login"
+        case .policy: return "need 1 policy"
+        case .location: return "need location permission"
+        case .trip: return "need 1 trip"
+        case .mobile: return "need mobile number"
+        case .notification: return "neec notification permission"
         }
       }
 }

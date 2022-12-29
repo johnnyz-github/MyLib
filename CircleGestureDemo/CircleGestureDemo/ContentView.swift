@@ -10,6 +10,7 @@ import SSSwiftUIGIFView
 struct ContentView: View {
     var body: some View {
         ZStack {
+           
            Image("background")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
@@ -31,30 +32,25 @@ struct HomeView: View {
                         radius: 150.0)
     var body: some View {
         VStack{
-            SummaryView(model : picIsland.selectedIcon)
-            Spacer()
+            ZStack{
+                SummaryView(model : picIsland.selectedIcon)
+                
+            }
             ZStack {
                 SwiftUIGIFPlayerView(gifName: "globe")
 //                    .frame(width: 400, height: 400, alignment: .center)
     //            globeAnimation
                 circleIcons
 
-                Circle()
-                    .fill( Color.red)
-                    .frame(width: config.knobRadius * 2, height: config.knobRadius * 2)
-                    .padding(10)
-                    .offset(y: -config.radius)
-                    .rotationEffect(Angle.degrees(Double(angleValue)))
-                    .gesture(DragGesture(minimumDistance: 0.0)
-                                .onChanged({ value in
-                                    change(location: value.location)
-                                }))
+                dragGesture
+               
 
                 Text("\( picIsland.icons[ indexOfTopIcon].title) ")
                                 .font(.system(size: 20))
                                 .foregroundColor(.white)
                                 .frame(width: 100, height: 50, alignment: .center)
             }
+            
 //            .background(Color.white.opacity(0.5))
         }
         
@@ -74,7 +70,7 @@ struct HomeView: View {
         
         if value >= config.minimumValue && value <= config.maximumValue {
             indexOfTopIcon = Int(value)
-            
+            picIsland.setSelectedIcon(indexOfTopIcon)
             angleValue = fixedAngle * 180 / .pi // converting to degree
         }
     }
@@ -108,6 +104,19 @@ struct HomeView: View {
             }
         }
     }
+    var dragGesture : some View {
+        Circle()
+            .fill( Color.red)
+            .frame(width: config.knobRadius * 2, height: config.knobRadius * 2)
+            .padding(10)
+            .offset(y: -config.radius)
+            .rotationEffect(Angle.degrees(Double(angleValue)))
+            .gesture(DragGesture(minimumDistance: 0.0)
+                        .onChanged({ value in
+                            change(location: value.location)
+                        }))
+    }
+    
     func rotateN(_ i : Int) -> Int{
         if i + indexOfTopIcon > 11 {
             

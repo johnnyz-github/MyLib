@@ -19,6 +19,9 @@
 		7467BC55295C4374004FBFC4 /* SummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC54295C4374004FBFC4 /* SummaryView.swift */; };
 		7467BC57295C46D0004FBFC4 /* PolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC56295C46D0004FBFC4 /* PolicyView.swift */; };
 		7467BC59295C4F7E004FBFC4 /* globe.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7467BC58295C4F7E004FBFC4 /* globe.gif */; };
+		7467BC5B295D899F004FBFC4 /* carriage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7467BC5A295D899F004FBFC4 /* carriage.gif */; };
+		7467BC5D295DB281004FBFC4 /* RequirementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC5C295DB281004FBFC4 /* RequirementType.swift */; };
+		7467BC5F295DB629004FBFC4 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC5E295DB629004FBFC4 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +38,9 @@
 		7467BC54295C4374004FBFC4 /* SummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryView.swift; sourceTree = "<group>"; };
 		7467BC56295C46D0004FBFC4 /* PolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyView.swift; sourceTree = "<group>"; };
 		7467BC58295C4F7E004FBFC4 /* globe.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = globe.gif; sourceTree = "<group>"; };
+		7467BC5A295D899F004FBFC4 /* carriage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carriage.gif; sourceTree = "<group>"; };
+		7467BC5C295DB281004FBFC4 /* RequirementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementType.swift; sourceTree = "<group>"; };
+		7467BC5E295DB629004FBFC4 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		BD18FF3005DD82251E0E7CB7 /* Pods-CircleGestureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleGestureDemo.release.xcconfig"; path = "Target Support Files/Pods-CircleGestureDemo/Pods-CircleGestureDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,9 +84,12 @@
 				7467BC42295A91C5004FBFC4 /* IconModel.swift */,
 				7467BC44295BAB1B004FBFC4 /* globe-2.gif */,
 				7467BC58295C4F7E004FBFC4 /* globe.gif */,
-				7467BC4F295BB22B004FBFC4 /* URLType.swift */,
 				7467BC54295C4374004FBFC4 /* SummaryView.swift */,
 				7467BC56295C46D0004FBFC4 /* PolicyView.swift */,
+				7467BC5A295D899F004FBFC4 /* carriage.gif */,
+				7467BC5E295DB629004FBFC4 /* TaskView.swift */,
+				7467BC5C295DB281004FBFC4 /* RequirementType.swift */,
+				7467BC4F295BB22B004FBFC4 /* URLType.swift */,
 			);
 			path = CircleGestureDemo;
 			sourceTree = "<group>";
@@ -169,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7467BC45295BAB1B004FBFC4 /* globe-2.gif in Resources */,
+				7467BC5B295D899F004FBFC4 /* carriage.gif in Resources */,
 				7467BC3A2959CA8A004FBFC4 /* Preview Assets.xcassets in Resources */,
 				7467BC59295C4F7E004FBFC4 /* globe.gif in Resources */,
 				7467BC372959CA8A004FBFC4 /* Assets.xcassets in Resources */,
@@ -224,7 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7467BC5F295DB629004FBFC4 /* TaskView.swift in Sources */,
 				7467BC43295A91C5004FBFC4 /* IconModel.swift in Sources */,
+				7467BC5D295DB281004FBFC4 /* RequirementType.swift in Sources */,
 				7467BC50295BB22B004FBFC4 /* URLType.swift in Sources */,
 				7467BC41295A9106004FBFC4 /* PicIslandViewModel.swift in Sources */,
 				7467BC352959CA88004FBFC4 /* ContentView.swift in Sources */,

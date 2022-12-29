@@ -6,23 +6,28 @@
 //
 
 import SwiftUI
-
+import SSSwiftUIGIFView
 struct SummaryView: View {
     var model : IconModel
     
     var body: some View {
-        
-            VStack{
-                Text("\(model.title)")
-                Image("nearme")
+
+        VStack{
+            Text("\(model.title)")
+            ZStack{
+                Image(model.title)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    }
+                
+                TaskView(model : model)
+                }
+        }
+
     }
 }
 
 struct SummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        SummaryView(model: IconModel(id: 1, systemName: "ferry", picName:"liberty",  title: "Policy", selected: true))
+        SummaryView(model: IconModel(id: 1, systemName: "ferry", picName:"liberty",  title: "policy", selected: true, requirements: [.login]))
     }
 }

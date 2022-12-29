@@ -11,5 +11,6 @@ struct IconModel : Identifiable{
     let systemName : String
     let picName : String
     let title : String
-    let selected : Bool
+    var selected : Bool
+    let requirements : [RequirementType]
 }

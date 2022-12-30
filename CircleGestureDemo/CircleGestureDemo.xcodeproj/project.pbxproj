@@ -21,6 +21,14 @@
 		7467BC5B295D899F004FBFC4 /* carriage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7467BC5A295D899F004FBFC4 /* carriage.gif */; };
 		7467BC5D295DB281004FBFC4 /* RequirementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC5C295DB281004FBFC4 /* RequirementType.swift */; };
 		7467BC5F295DB629004FBFC4 /* RequirementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC5E295DB629004FBFC4 /* RequirementView.swift */; };
+		7467BC63295E6005004FBFC4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC62295E6005004FBFC4 /* LoginView.swift */; };
+		7467BC65295E73E0004FBFC4 /* PolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC64295E73E0004FBFC4 /* PolicyView.swift */; };
+		7467BC67295E73EB004FBFC4 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC66295E73EB004FBFC4 /* TripView.swift */; };
+		7467BC69295E73F9004FBFC4 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC68295E73F9004FBFC4 /* AlertView.swift */; };
+		7467BC6B295E7417004FBFC4 /* NearMeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC6A295E7417004FBFC4 /* NearMeView.swift */; };
+		7467BC6D295E7B42004FBFC4 /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC6C295E7B42004FBFC4 /* NotificationPermission.swift */; };
+		7467BC6F295E7F8B004FBFC4 /* LocationPermissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC6E295E7F8B004FBFC4 /* LocationPermissionView.swift */; };
+		7467BC71295E7FC2004FBFC4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC70295E7FC2004FBFC4 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,14 @@
 		7467BC5A295D899F004FBFC4 /* carriage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = carriage.gif; sourceTree = "<group>"; };
 		7467BC5C295DB281004FBFC4 /* RequirementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementType.swift; sourceTree = "<group>"; };
 		7467BC5E295DB629004FBFC4 /* RequirementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementView.swift; sourceTree = "<group>"; };
+		7467BC62295E6005004FBFC4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		7467BC64295E73E0004FBFC4 /* PolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolicyView.swift; sourceTree = "<group>"; };
+		7467BC66295E73EB004FBFC4 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		7467BC68295E73F9004FBFC4 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		7467BC6A295E7417004FBFC4 /* NearMeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearMeView.swift; sourceTree = "<group>"; };
+		7467BC6C295E7B42004FBFC4 /* NotificationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
+		7467BC6E295E7F8B004FBFC4 /* LocationPermissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionView.swift; sourceTree = "<group>"; };
+		7467BC70295E7FC2004FBFC4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BD18FF3005DD82251E0E7CB7 /* Pods-CircleGestureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircleGestureDemo.release.xcconfig"; path = "Target Support Files/Pods-CircleGestureDemo/Pods-CircleGestureDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +103,14 @@
 				7467BC5E295DB629004FBFC4 /* RequirementView.swift */,
 				7467BC5C295DB281004FBFC4 /* RequirementType.swift */,
 				7467BC4F295BB22B004FBFC4 /* URLType.swift */,
+				7467BC62295E6005004FBFC4 /* LoginView.swift */,
+				7467BC64295E73E0004FBFC4 /* PolicyView.swift */,
+				7467BC66295E73EB004FBFC4 /* TripView.swift */,
+				7467BC68295E73F9004FBFC4 /* AlertView.swift */,
+				7467BC6A295E7417004FBFC4 /* NearMeView.swift */,
+				7467BC6C295E7B42004FBFC4 /* NotificationPermission.swift */,
+				7467BC6E295E7F8B004FBFC4 /* LocationPermissionView.swift */,
+				7467BC70295E7FC2004FBFC4 /* ProfileView.swift */,
 			);
 			path = CircleGestureDemo;
 			sourceTree = "<group>";
@@ -232,12 +256,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7467BC5F295DB629004FBFC4 /* RequirementView.swift in Sources */,
+				7467BC6D295E7B42004FBFC4 /* NotificationPermission.swift in Sources */,
 				7467BC43295A91C5004FBFC4 /* IconModel.swift in Sources */,
 				7467BC5D295DB281004FBFC4 /* RequirementType.swift in Sources */,
+				7467BC63295E6005004FBFC4 /* LoginView.swift in Sources */,
+				7467BC65295E73E0004FBFC4 /* PolicyView.swift in Sources */,
+				7467BC69295E73F9004FBFC4 /* AlertView.swift in Sources */,
+				7467BC6F295E7F8B004FBFC4 /* LocationPermissionView.swift in Sources */,
+				7467BC71295E7FC2004FBFC4 /* ProfileView.swift in Sources */,
 				7467BC50295BB22B004FBFC4 /* URLType.swift in Sources */,
 				7467BC41295A9106004FBFC4 /* PicIslandViewModel.swift in Sources */,
+				7467BC67295E73EB004FBFC4 /* TripView.swift in Sources */,
 				7467BC352959CA88004FBFC4 /* ContentView.swift in Sources */,
 				7467BC332959CA88004FBFC4 /* CircleGestureDemoApp.swift in Sources */,
+				7467BC6B295E7417004FBFC4 /* NearMeView.swift in Sources */,
 				7467BC55295C4374004FBFC4 /* SummaryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

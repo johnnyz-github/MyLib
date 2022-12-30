@@ -12,20 +12,41 @@ struct SummaryView: View {
     
     var body: some View {
 
-        VStack{
-            Text("\(model.title)")
-            ZStack{
-                Image(model.title)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-               Image("demo")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 50, alignment: .center)
-                RequirementView(model : model)
-                }
+        NavigationLink(destination: self.getDestination(itemText: model.title)) {
+            VStack{
+                
+                    Text("\(model.title)")
+                    
+                ZStack{
+                    Image(model.title)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                   Image("demo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 50, alignment: .center)
+                    RequirementView(model : model)
+                    }
+            }
         }
+        
+    }
+    func getDestination(itemText: String) -> AnyView {
 
+        if model.title == "policy"{
+            return AnyView(PolicyView())
+        }else if model.title == "login"{
+            return AnyView(LoginView(name: "", password: ""))
+        }else if model.title == "trip"{
+            return AnyView(TripView())
+        }else if model.title == "alert"{
+            return     AnyView(AlertView())
+        }else if model.title == "nearme"{
+            return AnyView(NearMeView())
+        }else{
+            return AnyView(EmptyView())
+        }
+//        return AnyView(EmptyView())
     }
 }
 

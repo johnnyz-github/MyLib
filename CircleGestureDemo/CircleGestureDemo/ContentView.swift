@@ -9,14 +9,16 @@ import SSSwiftUIGIFView
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-           
-           Image("background")
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .edgesIgnoringSafeArea(.all)
-            
-            HomeView()
+        NavigationView{
+            ZStack {
+               
+               Image("background")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .edgesIgnoringSafeArea(.all)
+                
+                HomeView()
+            }
         }
     }
 }
@@ -31,28 +33,26 @@ struct HomeView: View {
                         knobRadius: 5.0,
                         radius: 150.0)
     var body: some View {
-        VStack{
-            ZStack{
-                SummaryView(model : picIsland.selectedIcon)
-                
-            }
-            ZStack {
-                SwiftUIGIFPlayerView(gifName: "globe")
-//                    .frame(width: 400, height: 400, alignment: .center)
-    //            globeAnimation
-                circleIcons
+        
+            VStack{
+                ZStack{
+                    SummaryView(model : picIsland.selectedIcon)
+                    
+                }
+                ZStack {
+                    SwiftUIGIFPlayerView(gifName: "globe")
 
-                dragGesture
-               
+                    circleIcons
 
-                Text("\( picIsland.icons[ indexOfTopIcon].title) ")
-                                .font(.system(size: 20))
-                                .foregroundColor(.white)
-                                .frame(width: 100, height: 50, alignment: .center)
+                    dragGesture
+                   
+
+                    Text("\( picIsland.icons[ indexOfTopIcon].title) ")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(.white)
+                                    .frame(width: 100, height: 50, alignment: .center)
+                }
             }
-            
-//            .background(Color.white.opacity(0.5))
-        }
         
     }
     

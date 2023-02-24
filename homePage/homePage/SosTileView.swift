@@ -25,10 +25,11 @@ struct SosTileView: View {
                 .font(.system(size: 15, weight: .light, design: .default))
         }
         .padding()
-        .border(.gray)
-        .shadow(radius: 2)
-        .background(Color.white)
+        .cornerRadius(10)
+        .contentShape(Rectangle())
+        .background(ShadowBackground() )
     }
+    
 }
 
 struct SosTileView_Previews: PreviewProvider {

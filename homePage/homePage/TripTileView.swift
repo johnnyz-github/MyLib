@@ -23,6 +23,8 @@ struct TripTileView: View {
             Image(systemName: "chevron.right")
         }
         .padding()
+        .background(ShadowBackground())
+        .padding()
     }
 }
 

@@ -19,38 +19,41 @@ struct PolicyTileView: View {
             NavigationLink(destination: Text("hello")) {
                 policyNumberLine
             }
-            Divider()
+            .padding(.vertical, 17)
             destinationLine
             Divider()
             startDateLine
             Divider()
             endDateLine
         }
+        .padding()
         .background( Color.white)
         .cornerRadius(10)
         .contentShape(Rectangle())
     }
 
     var statusLine: some View {
-        return HStack {
-            Text(status)
-        }
+        return
+            ZStack{
+                Capsule().foregroundColor(.green).frame(width: 172).offset(x: -60)
+                HStack{
+                    Text(status)
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+            }
+            Spacer()
     }
 
     var policyNumberLine: some View {
         return HStack {
-            Label(policyNumber, image: "PolicyNumberIcon")
-
+            Label(policyNumber, image: "starShield")
             Spacer()
             Image(systemName: "chevron.right")
-                .foregroundColor(Color.white)
         }
-        .padding(.horizontal, 15)
-        .padding(.vertical, 10)
-        .foregroundColor(.white)
-        .background(Color.gray)
+        .foregroundColor(Color.apacBlue)
 
-        .font(.system(size: 17))
+        .font(.system(size: 22))
     }
 
     var destinationLine: some View {
@@ -61,9 +64,8 @@ struct PolicyTileView: View {
             Spacer()
             Text(destination)
                 .foregroundColor(.black)
-                .font(.system(size: 15))
+                .font(.system(size: 15, weight: .bold))
         }
-        .padding(.horizontal, 15)
         .padding(.vertical, 5)
     }
 
@@ -75,9 +77,8 @@ struct PolicyTileView: View {
             Spacer()
             Text(dateStart)
                 .foregroundColor(.black)
-                .font(.system(size: 15))
+                .font(.system(size: 15, weight: .bold))
         }
-        .padding(.horizontal, 15)
         .padding(.vertical, 5)
     }
 
@@ -89,10 +90,9 @@ struct PolicyTileView: View {
             Spacer()
             Text(dateEnd)
                 .foregroundColor(.black)
-                .font(.system(size: 15))
+                .font(.system(size: 15, weight: .bold))
         }
-        .padding(.horizontal, 15)
-        .padding(.vertical, 5)
+        .padding(.top, 5)
     }
 
     var status: String {

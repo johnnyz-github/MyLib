@@ -25,10 +25,10 @@ struct AlertNearMeTileView: View {
                 .font(.system(size: 15, weight: .light, design: .default))
         }
         .padding()
-        .border(.gray)
         .shadow(radius: 2)
-        .background(Color.white)
+        .background(ShadowBackground())
     }
+   
 }
 
 struct AlertNearMeTileView_Previews: PreviewProvider {

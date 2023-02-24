@@ -12,7 +12,7 @@ struct HomeHomeView: View {
 //    @StateObject var policyViewModel: PolicyViewModel
 //    @StateObject var alertNearmeViewModel: AlertViewModel
     var name = "zhouhong"
-    var backColor = Color.blue
+    var backColor = Color.apacBlue
     @State var index = 0
     var body: some View {
         ScrollView(.vertical){
@@ -20,19 +20,24 @@ struct HomeHomeView: View {
                 VStack{
                     Image("Logo_travelex")
                         .foregroundColor(.white)
+                        .padding(.top, 30)
+                    Divider().foregroundColor(.gray)
                     salutionView
                         .foregroundColor(.white)
                         
+                    viewAllBtn
                     policysTileCarousel
                 }
                 .padding()
                 .background( backColor )
-                ArcBottomShape(radius: 10)
+                ArcBottomShape(radius: 20)
                     .foregroundColor(backColor)
+                    .frame(height: 20)
                 middlePart
                 TripTileView()
             }
         }
+        .ignoresSafeArea()
         .onAppear {
 //            policyViewModel.loadPolicyList()
         }
@@ -40,7 +45,7 @@ struct HomeHomeView: View {
 
     var salutionView: some View {
         HStack{
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 8) {
                 Text("Hey").font(.system(size: 28)) + Text(" \(name)!")
                     .font(.system(size: 28, weight: .bold))
                 Text("Dream, Explore, Travel On")
@@ -49,7 +54,15 @@ struct HomeHomeView: View {
             Spacer()
         }
     }
-
+    var viewAllBtn : some View{
+        HStack{
+            Spacer()
+            Button(action: {}){
+                Text("View all").foregroundColor(.white)
+                    .font(.system(size: 13, weight: .bold))
+            }
+        }
+    }
     var policysTileCarousel: some View {
 
         return AnyView(
@@ -57,7 +70,7 @@ struct HomeHomeView: View {
                 HStack(spacing: 20) {
                     ForEach(policyList, id: \.self) { item in
                         PolicyTileView()
-                            .frame(width: 279, height: 177)
+                            .frame(width: 279)
                     }
                 }
                 .background(backColor)

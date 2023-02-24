@@ -10,22 +10,26 @@ import SwiftUI
 
 struct AlertNearMeTileView: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Image("TravelAlert").resizable().frame(width: 30, height: 30)
                 Spacer()
             }
             HStack{
                 Text("Travel Alerts")
-                    .font(.system(size: 20, weight: .bold, design: .default))
+                    .foregroundColor(.apacGray800)
+                    .font(.system(size: 20, weight: .regular, design: .default))
+                    .frame(width: 100, alignment: .leading)
                 Spacer()
                 Image(systemName: "chevron.right")
+                    .foregroundColor(.apacBlue)
             }
             Text("Stay on top of the latest safety advice and security alerts near you.")
-                .font(.system(size: 15, weight: .light, design: .default))
+                .foregroundColor(.apacGray600)
+                .font(.system(size: 15, weight: .regular, design: .default))
         }
         .padding()
-        .shadow(radius: 2)
+        .frame(maxHeight: .infinity)
         .background(ShadowBackground())
     }
    

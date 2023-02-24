@@ -50,6 +50,7 @@ struct PolicyTileView: View {
             Label(policyNumber, image: "starShield")
             Spacer()
             Image(systemName: "chevron.right")
+                .foregroundColor(.apacBlue)
         }
         .foregroundColor(Color.apacBlue)
 

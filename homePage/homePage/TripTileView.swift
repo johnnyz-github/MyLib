@@ -11,16 +11,18 @@ import SwiftUI
 struct TripTileView: View {
     var body: some View {
         HStack{
-            VStack (alignment: .leading){
-                Label("Your Destinations", image: "TripTileIcon" ) 
+            VStack (alignment: .leading, spacing: 12){
+                Label("Your Destinations", image: "TripTileIcon" )
+                    .foregroundColor(.apacGray800)
+                    .font(.system(size: 20, weight: .regular, design: .default))
                 Text("Keep up to date with the latest travel advice for your destinations.")
-                    .font(.system(size: 15, weight: .light, design: .default))
+                    .foregroundColor(.apacGray600)
+                    .font(.system(size: 15, weight: .regular, design: .default))
             }
             
-            .shadow(radius: 2)
-            .background(Color.white)
             Spacer()
             Image(systemName: "chevron.right")
+                .foregroundColor(.apacBlue)
         }
         .padding()
         .background(ShadowBackground())

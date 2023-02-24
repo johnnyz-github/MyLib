@@ -34,6 +34,7 @@ struct HomeHomeView: View {
                     .foregroundColor(backColor)
                     .frame(height: 20)
                 middlePart
+                    .padding()
                 TripTileView()
             }
         }
@@ -81,12 +82,9 @@ struct HomeHomeView: View {
     var middlePart: some View{
             HStack(spacing: 20) {
                 SosTileView()
-                    .frame(height: 205)
-
                 AlertNearMeTileView()
-                    .frame(height: 205)
             }
-            .padding()
+            .fixedSize(horizontal: false, vertical: false)
     }
     var policyList = ["policy1", "policy2","policy3"]
         

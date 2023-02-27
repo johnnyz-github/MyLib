@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74528B0D29ACB9D90023C64D /* CurvedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74528B0C29ACB9D90023C64D /* CurvedShadowView.swift */; };
+		74528B0F29ACBA430023C64D /* ShadowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74528B0E29ACBA430023C64D /* ShadowBackground.swift */; };
 		7495E59929ACB10D00C71529 /* homePageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E59829ACB10D00C71529 /* homePageApp.swift */; };
 		7495E59B29ACB10D00C71529 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E59A29ACB10D00C71529 /* ContentView.swift */; };
 		7495E5A129ACB10F00C71529 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7495E5A029ACB10F00C71529 /* Preview Assets.xcassets */; };
 		7495E5AC29ACB13B00C71529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7495E5AB29ACB13B00C71529 /* Assets.xcassets */; };
-		7495E5C429ACB1DC00C71529 /* ShadowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E5C329ACB1DC00C71529 /* ShadowBackground.swift */; };
 		7495E5D429ACB24E00C71529 /* ArcBottomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E5C529ACB24D00C71529 /* ArcBottomShape.swift */; };
 		7495E5D529ACB24E00C71529 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E5C629ACB24D00C71529 /* SettingsView.swift */; };
 		7495E5D629ACB24E00C71529 /* homePageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E5C729ACB24D00C71529 /* homePageApp.swift */; };
@@ -31,13 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74528B0C29ACB9D90023C64D /* CurvedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShadowView.swift; sourceTree = "<group>"; };
+		74528B0E29ACBA430023C64D /* ShadowBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowBackground.swift; sourceTree = "<group>"; };
 		7495E59529ACB10D00C71529 /* homePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7495E59829ACB10D00C71529 /* homePageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageApp.swift; sourceTree = "<group>"; };
 		7495E59A29ACB10D00C71529 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7495E59E29ACB10F00C71529 /* homePage.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = homePage.entitlements; sourceTree = "<group>"; };
 		7495E5A029ACB10F00C71529 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7495E5AB29ACB13B00C71529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../homePage_bak/homePage/Assets.xcassets; sourceTree = "<group>"; };
-		7495E5C329ACB1DC00C71529 /* ShadowBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShadowBackground.swift; path = ../../homePage1/homePage1/ShadowBackground.swift; sourceTree = "<group>"; };
 		7495E5C529ACB24D00C71529 /* ArcBottomShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArcBottomShape.swift; sourceTree = "<group>"; };
 		7495E5C629ACB24D00C71529 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		7495E5C729ACB24D00C71529 /* homePageApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homePageApp.swift; sourceTree = "<group>"; };
@@ -91,12 +93,12 @@
 				7495E59829ACB10D00C71529 /* homePageApp.swift */,
 				7495E59A29ACB10D00C71529 /* ContentView.swift */,
 				7495E5AB29ACB13B00C71529 /* Assets.xcassets */,
-				7495E5C329ACB1DC00C71529 /* ShadowBackground.swift */,
 				7495E5CA29ACB24D00C71529 /* AlertNearMeTileView.swift */,
 				7495E5C529ACB24D00C71529 /* ArcBottomShape.swift */,
 				7495E5C729ACB24D00C71529 /* homePageApp.swift */,
 				7495E5CD29ACB24D00C71529 /* PolicysTileCarousel.swift */,
 				7495E5C829ACB24D00C71529 /* PolicyTileView.swift */,
+				74528B0E29ACBA430023C64D /* ShadowBackground.swift */,
 				7495E5C929ACB24D00C71529 /* PolicyView.swift */,
 				7495E5CB29ACB24D00C71529 /* SeparateLineShape.swift */,
 				7495E5CE29ACB24D00C71529 /* SeperateLine.swift */,
@@ -108,6 +110,7 @@
 				7495E5CC29ACB24D00C71529 /* TripTileView.swift */,
 				7495E59E29ACB10F00C71529 /* homePage.entitlements */,
 				7495E59F29ACB10F00C71529 /* Preview Content */,
+				74528B0C29ACB9D90023C64D /* CurvedShadowView.swift */,
 			);
 			path = homePage;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				7495E5E029ACB24E00C71529 /* TripListRepresentView.swift in Sources */,
 				7495E5DE29ACB24E00C71529 /* SosTileView.swift in Sources */,
 				7495E59929ACB10D00C71529 /* homePageApp.swift in Sources */,
+				74528B0D29ACB9D90023C64D /* CurvedShadowView.swift in Sources */,
 				7495E5D929ACB24E00C71529 /* AlertNearMeTileView.swift in Sources */,
 				7495E5D629ACB24E00C71529 /* homePageApp.swift in Sources */,
 				7495E5DD29ACB24E00C71529 /* SeperateLine.swift in Sources */,
@@ -204,7 +208,7 @@
 				7495E5DC29ACB24E00C71529 /* PolicysTileCarousel.swift in Sources */,
 				7495E5E629ACB29800C71529 /* Colors.swift in Sources */,
 				7495E5DB29ACB24E00C71529 /* TripTileView.swift in Sources */,
-				7495E5C429ACB1DC00C71529 /* ShadowBackground.swift in Sources */,
+				74528B0F29ACBA430023C64D /* ShadowBackground.swift in Sources */,
 				7495E5E229ACB24E00C71529 /* ContentView.swift in Sources */,
 				7495E5DF29ACB24E00C71529 /* SosView.swift in Sources */,
 				7495E5D829ACB24E00C71529 /* PolicyView.swift in Sources */,

@@ -26,7 +26,10 @@ struct HomeHomeView: View {
                         .foregroundColor(.white)
                         
                     viewAllBtn
-                    policysTileCarousel
+                    PolicysTileCarousel(policyList : policyList)
+//                        .fixedSize()
+                        .frame(height: 177)
+//                    policysTileCarousel
                 }
                 .padding()
                 .background( backColor )

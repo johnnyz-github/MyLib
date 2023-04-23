@@ -33,7 +33,7 @@ struct SeperateLine: Shape {
         path.move(to: p1)
         path.addLine(to: p4)
         path.addRelativeArc(center: po, radius: radius,
-                            startAngle: Angle.degrees(180), delta: Angle.degrees(180))
+                            startAngle: Angle.degrees(210), delta: Angle.degrees(120))
         path.addLine(to: p4)
         path.addLine(to: p5)
         path.addLine(to: p6)
@@ -44,14 +44,14 @@ struct SeperateLine: Shape {
 
 struct SeperateLine_Previews: PreviewProvider {
     static var previews: some View {
-        SeperateLine().frame(width: 300, height: 25)
+        SeperateLine().frame(width: 300, height: 3)
             .foregroundColor(.white)
             .background(Color.white)
             .shadow(
-                color: Color.gray.opacity(0.7),
-                radius: 8,
+                color: Color.gray.opacity(0.3),
+                radius: 5,
                 x: 0,
-                y: 0
+                y: -6
             )
     }
 }

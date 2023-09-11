@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CFEFBD30-057A-4104-ACFF-D09EE0E503AB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1403107C-2F29-457D-A90A-2633A4CB0E98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LifeCycleMain/LifeCycleMainApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "1403107C-2F29-457D-A90A-2633A4CB0E98 - 60d0cab6fa065485"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LifeCycleMain.LifeCycleMainApp.body.getter : some"
+                  moduleName = "LifeCycleMain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnny1/Public/git/MyLib/LifeCycleMain/LifeCycleMain/LifeCycleMainApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "1403107C-2F29-457D-A90A-2633A4CB0E98 - a844d0c80d809c51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; LifeCycleMain.ContentView in LifeCycleMain.LifeCycleMainApp.body.getter : some"
+                  moduleName = "LifeCycleMain"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/johnny1/Public/git/MyLib/LifeCycleMain/LifeCycleMain/LifeCycleMainApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

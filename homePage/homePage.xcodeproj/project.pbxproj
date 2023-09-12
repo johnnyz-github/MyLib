@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40F289A629AD8659002223EF /* ShadowDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F289A529AD8659002223EF /* ShadowDivider.swift */; };
 		74528B0D29ACB9D90023C64D /* CurvedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74528B0C29ACB9D90023C64D /* CurvedShadowView.swift */; };
 		74528B0F29ACBA430023C64D /* ShadowBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74528B0E29ACBA430023C64D /* ShadowBackground.swift */; };
 		74528B1329ACBD170023C64D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74528B1229ACBD170023C64D /* Assets.xcassets */; };
+		74528B1929AF4D940023C64D /* ShadowDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74528B1829AF4D940023C64D /* ShadowDivider.swift */; };
+		74528B2429AF69E50023C64D /* ShadowDividerLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74528B2329AF69E50023C64D /* ShadowDividerLine.swift */; };
 		7495E59929ACB10D00C71529 /* homePageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E59829ACB10D00C71529 /* homePageApp.swift */; };
 		7495E59B29ACB10D00C71529 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7495E59A29ACB10D00C71529 /* ContentView.swift */; };
 		7495E5A129ACB10F00C71529 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7495E5A029ACB10F00C71529 /* Preview Assets.xcassets */; };
@@ -33,10 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		40F289A529AD8659002223EF /* ShadowDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDivider.swift; sourceTree = "<group>"; };
 		74528B0C29ACB9D90023C64D /* CurvedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedShadowView.swift; sourceTree = "<group>"; };
 		74528B0E29ACBA430023C64D /* ShadowBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowBackground.swift; sourceTree = "<group>"; };
 		74528B1229ACBD170023C64D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74528B1829AF4D940023C64D /* ShadowDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDivider.swift; sourceTree = "<group>"; };
+		74528B2329AF69E50023C64D /* ShadowDividerLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowDividerLine.swift; sourceTree = "<group>"; };
 		7495E59529ACB10D00C71529 /* homePage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homePage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7495E59829ACB10D00C71529 /* homePageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homePageApp.swift; sourceTree = "<group>"; };
 		7495E59A29ACB10D00C71529 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,8 +104,6 @@
 				7495E5C829ACB24D00C71529 /* PolicyTileView.swift */,
 				74528B0E29ACBA430023C64D /* ShadowBackground.swift */,
 				7495E5C929ACB24D00C71529 /* PolicyView.swift */,
-				7495E5CB29ACB24D00C71529 /* SeparateLineShape.swift */,
-				7495E5CE29ACB24D00C71529 /* SeperateLine.swift */,
 				7495E5C629ACB24D00C71529 /* SettingsView.swift */,
 				7495E5CF29ACB24D00C71529 /* SosTileView.swift */,
 				7495E5D029ACB24D00C71529 /* SosView.swift */,
@@ -113,7 +113,10 @@
 				7495E59E29ACB10F00C71529 /* homePage.entitlements */,
 				7495E59F29ACB10F00C71529 /* Preview Content */,
 				74528B0C29ACB9D90023C64D /* CurvedShadowView.swift */,
-				40F289A529AD8659002223EF /* ShadowDivider.swift */,
+				74528B2329AF69E50023C64D /* ShadowDividerLine.swift */,
+				74528B1829AF4D940023C64D /* ShadowDivider.swift */,
+				7495E5CE29ACB24D00C71529 /* SeperateLine.swift */,
+				7495E5CB29ACB24D00C71529 /* SeparateLineShape.swift */,
 			);
 			path = homePage;
 			sourceTree = "<group>";
@@ -199,7 +202,6 @@
 				7495E5DA29ACB24E00C71529 /* SeparateLineShape.swift in Sources */,
 				7495E5D529ACB24E00C71529 /* SettingsView.swift in Sources */,
 				7495E59B29ACB10D00C71529 /* ContentView.swift in Sources */,
-				40F289A629AD8659002223EF /* ShadowDivider.swift in Sources */,
 				7495E5D729ACB24E00C71529 /* PolicyTileView.swift in Sources */,
 				7495E5E029ACB24E00C71529 /* TripListRepresentView.swift in Sources */,
 				7495E5DE29ACB24E00C71529 /* SosTileView.swift in Sources */,
@@ -208,8 +210,10 @@
 				7495E5D929ACB24E00C71529 /* AlertNearMeTileView.swift in Sources */,
 				7495E5D629ACB24E00C71529 /* homePageApp.swift in Sources */,
 				7495E5DD29ACB24E00C71529 /* SeperateLine.swift in Sources */,
+				74528B2429AF69E50023C64D /* ShadowDividerLine.swift in Sources */,
 				7495E5E129ACB24E00C71529 /* HomeHomeView.swift in Sources */,
 				7495E5DC29ACB24E00C71529 /* PolicysTileCarousel.swift in Sources */,
+				74528B1929AF4D940023C64D /* ShadowDivider.swift in Sources */,
 				7495E5E629ACB29800C71529 /* Colors.swift in Sources */,
 				7495E5DB29ACB24E00C71529 /* TripTileView.swift in Sources */,
 				74528B0F29ACBA430023C64D /* ShadowBackground.swift in Sources */,

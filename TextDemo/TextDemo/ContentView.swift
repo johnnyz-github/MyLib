@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var text = ""
     var body: some View {
         VStack{
             myText
             myText1
             myText2
+            TextField("placeholder", text: $text).padding()
+                .frame(height: 50)
+                .foregroundColor(.white)
+                .background(Color.gray)
         }
     }
     var myText: some View{

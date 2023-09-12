@@ -23,7 +23,7 @@ struct CurvedShadowView: View {
                 path.closeSubpath()
             }
             .fill(Color.white)
-            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 5)
+            .shadow(color: Color.gray.opacity(0.3), radius: 10, x: 0, y: 10)
         }
     }
 }

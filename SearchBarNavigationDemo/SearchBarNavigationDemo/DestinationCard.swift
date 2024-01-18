@@ -66,6 +66,8 @@ struct DestinationCard: View {
 
     var backgroundView: some View {
         OptionalCachedImageView(optionalCachedImage: OptionalCachedImage(iso2: iso2))
+            
             .frame(height: 140)
+            .cornerRadius(9)
     }
 }
